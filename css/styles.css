@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    height: 100vh; /* 100% af viewportens højde */
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* Centrer vandret */
-    align-items: center; /* Centrer lodret */
-    background-color: #ffffff; /* Baggrundsfarve */
-    font-family: 'Roboto', sans-serif; /* Brug Roboto-skrifttypen */
-    color: #333; /* Mørkegrå farve */
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    color: #333;
 }
 
 .tekst {
@@ -16,21 +16,21 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #333; /* Mørkegrå farve */
-    z-index: 1000; /* Sørg for at teksten er foran clouds */
-    font-family: 'Roboto', sans-serif; /* Brug Roboto-skrifttypen */
+    z-index: 1000; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-title {
     font-size: 72px;
     font-weight: bold;
-    margin-bottom: 20px; /* Afstand til under teksten */
+    margin-bottom: 20px; 
 }
 
 .sub-text {
     font-size: 22px;
     color: #5e5e5e; /* Gul / orange farve */
-    opacity: 0; /* Sætter initial gennemsigtighed til 0 */
-    animation: fade 3s infinite; /* Anvend fade-animation i 4 sekunder, gentages uendeligt */
+    opacity: 0; 
+    animation: fade 3s infinite; /* Anvend fade-animation i 3 sekunder, gentages uendeligt */
 }
 
 .logo {
