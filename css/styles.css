@@ -1,9 +1,12 @@
 body {
     margin: 0;
-    height: 100%;
-    overflow: hidden;
-    filter: grayscale(0%) blur(0px);
-    position: relative;
+    height: 100vh; /* 100% af viewportens højde */
+    display: flex;
+    justify-content: center; /* Centrer vandret */
+    align-items: center; /* Centrer lodret */
+    background-color: #ffffff; /* Baggrundsfarve */
+    font-family: 'Roboto', sans-serif; /* Brug Roboto-skrifttypen */
+    color: #333; /* Mørkegrå farve */
 }
 
 .tekst {
@@ -13,11 +16,24 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #333; /* Mørkegrå farve */
-    z-index: 999;
+    z-index: 1000; /* Sørg for at teksten er foran clouds */
+    font-family: 'Roboto', sans-serif; /* Brug Roboto-skrifttypen */
 }
 
 .main-title {
-    font-size: 48px;
+    font-size: 72px;
     font-weight: bold;
     margin-bottom: 20px; /* Afstand til under teksten */
+}
+
+.sub-text {
+    font-size: 22px;
+}
+
+#vantajs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
