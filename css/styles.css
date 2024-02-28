@@ -2,4 +2,15 @@ body {
     margin: 0;
     overflow: hidden;
     filter: grayscale(0%) blur(0px);
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Juster gennemsigtigheden her (0.5 = 50% gennemsigtighed) */
+    pointer-events: none; /* Tillader klik gennem overlay-laget */
 }
