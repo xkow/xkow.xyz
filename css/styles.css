@@ -28,6 +28,19 @@ body {
 
 .sub-text {
     font-size: 22px;
+    color: #5e5e5e; /* Gul / orange farve */
+    opacity: 0; /* Sætter initial gennemsigtighed til 0 */
+    animation: fade 3s infinite; /* Anvend fade-animation i 4 sekunder, gentages uendeligt */
+}
+
+.logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px; /* Juster størrelsen efter behov */
+    height: auto; /* Skaleres automatisk i forhold til bredden */
+    z-index: 1001; /* Sørg for at logoet er foran clouds og teksten */
+    cursor: pointer; /* Vis pegefingermarkør når man holder over det */
 }
 
 #vantajs {
@@ -36,4 +49,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0; /* Gennemsigtighed 0% i start og slut */
+    }
+    50% {
+        opacity: 1; /* Gennemsigtighed 100% i midten */
+    }
 }
