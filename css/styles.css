@@ -37,10 +37,10 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 40px; /* Juster størrelsen efter behov */
-    height: auto; /* Skaleres automatisk i forhold til bredden */
-    z-index: 1001; /* Sørg for at logoet er foran clouds og teksten */
-    cursor: pointer; /* Vis pegefingermarkør når man holder over det */
+    width: 40px; 
+    height: auto; 
+    z-index: 1001; 
+    cursor: pointer; 
 }
 
 #vantajs {
