@@ -56,3 +56,13 @@ h1 {
 .description p {
     margin-bottom: 0;
 }
+
+.logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px; 
+    height: auto; 
+    z-index: 1001; 
+    cursor: pointer; 
+}
