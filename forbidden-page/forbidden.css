@@ -22,7 +22,7 @@ h1 {
     position: fixed;
     width: 100vw;
     z-index: 1;
-    color: #ffffff26;
+    color: #ff000026;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
     top: 50%;
     transform: translateY(-50%);
@@ -50,11 +50,11 @@ P {
 }
 
 span {
-    color: #f0c674;
+    color: #00ff0d;
 }
 
 i {
-    color: #8abeb7;
+    color: #00ff0d;
 }
 
 div a {
@@ -62,7 +62,7 @@ div a {
 }
 
 b {
-    color: #81a2be;
+    color: #00ff0d;
 }
 
 a.avatar {
