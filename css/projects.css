@@ -47,7 +47,10 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+    height: auto; /* Ændret til auto for at tilpasse højden til indholdet */
 }
+
+
 
 .description h2 {
     margin-top: 0;
@@ -57,7 +60,7 @@ h1 {
     margin-bottom: 0;
 }
 
-.logo {
+.logogit {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -65,4 +68,17 @@ h1 {
     height: auto; 
     z-index: 1001; 
     cursor: pointer; 
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.logoweb {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px; 
+    height: auto; 
+    z-index: 1001; 
+    cursor: pointer; 
+    vertical-align: middle;
 }
