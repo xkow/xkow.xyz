@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: calc(50% - 20px); /* Første to kasser i en række på større skærme */
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project:nth-child(odd) {
+    margin-right: 20px; /* Tilføjer margin til højre for at adskille kasserne */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.description {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+.description p {
+    margin-bottom: 0;
+}
