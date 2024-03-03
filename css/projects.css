@@ -8,6 +8,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -26,11 +27,14 @@ h1 {
     text-align: center;
     text-decoration: none;
     color: inherit;
+    border: 2px solid #ccc; /* Tilføjer grå streg omkring kasserne */
+    border-radius: 5px;
 }
 
 .project:nth-child(odd) {
     margin-right: 20px; /* Tilføjer margin til højre for at adskille kasserne */
 }
+
 
 .project img {
     max-width: 100%;
