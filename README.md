@@ -3,5 +3,4 @@
 2. Åben terminal i directory
 3. docker build . -t xkowxyz-frontpage
 4. docker container run -d -p 9696:80 --name xkowxy-frontpage xkowxyz-frontpage
-Tjek status
 6. docker image ls
