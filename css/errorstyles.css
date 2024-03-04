@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body, .title, .prompt, .input-line {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/pictures/ubuntu15.04-wallpaper.jpg') no-repeat center center fixed;
+
+  }
+  
+  .terminal {
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    width: 700px; /* Øget bredden */
+    height: 450px; /* Øget højden */
+    display: flex;
+    flex-direction: column;
+    color: limegreen;
+  }
+  
+  .title-bar {
+    background-color: #444;
+    color: white;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .close-button {
+    width: 15px;
+    height: 15px;
+    background-color: #ff5f56;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  
+  .prompt {
+    margin-right: 10px;
+    font-weight: bold; /* Tilføjet fed skrift */
+    width: 130px; /* Øget bredden af prompt */
+  }
+
+  
+  .input-line:focus {
+    color: rgb(255, 255, 255);
+    outline: none; /* Fjerner markeret boks, når inputfeltet er i fokus */
+  }
+  
+  .content {
+    padding: 10px 20px;
+    color: white;
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    padding-bottom: 5px;
+    overflow-y: hidden;
+    outline: none; /* Fjerner markeret boks, når inputfeltet er i fokus */
+
+  }
+  
+  .input-line {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.4; /* Juster line-height for at skabe mere plads mellem linjerne */
+    margin-left: 20px; /* Tilføjet margin til venstre side for at rykke teksten lidt længere til højre */  
+    background-color: transparent;
+    border: none; /* Fjernet border-bottom */
+    color: inherit;
+    flex-grow: 1;
+    padding: 0 0px;
+    outline: none;
+    cursor: text;
+    position: relative;
+  }
+  
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* CSS for initialbeskeden */
+.initial-message {
+    color: red;
+    overflow: hidden; /* Skjuler teksten, der er længere end containeren */
+    white-space: nowrap; /* Forhindrer teksten i at blive vist på flere linjer */
+    animation: typing 3s steps(40, end); /* Simulerer typewriter-effekten */
+
+  }
+.fade-in-text {
+    color: red; /* Ændrer tekstens farve til rød */
+    animation: typing 3s steps(40, end); /* Tilføjer typewriter-effekt */
+  }  
+  /* Keyframes for typewriter-animation */
+  @keyframes typing {
+    from { width: 0; } /* Starter med en bredde på 0 */
+    to { width: 100%; } /* Endelig bredde er 100% af containeren */
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Forhindrer scrollning */
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/billeder/ubuntu15.04-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1; /* Placer baggrundsbilledet bag alle andre elementer */
+  }
