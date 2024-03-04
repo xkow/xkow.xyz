@@ -33,7 +33,7 @@ body {
     animation: fade 3s infinite; /* Anvend fade-animation i 3 sekunder, gentages uendeligt */
 }
 
-.logogit {
+.logogithub {
     position: fixed;
     bottom: 20px;
     right: 20px;
