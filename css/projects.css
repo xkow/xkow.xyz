@@ -1,84 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f9f9;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: "Roboto", sans-serif;
+}
+.top-bar,
+.bottom-bar {
+    background-color: #333; /* Dark color for top and bottom bars */
+    color: #fff;
+    text-align: center;
+    padding: 5px 0; /* Adjusted padding for thinner bars */
 }
 
-h1 {
-    text-align: center;
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-bar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bottom-bar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.bottom-bar nav ul li:last-child {
+    margin-right: 0;
+}
+
+.bottom-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: -40px; /* Remove extra space after projects */
 }
 
 .project {
-    width: calc(50% - 20px); /* Første to kasser i en række på større skærme */
-    margin-bottom: 20px;
+    width: calc(25% - 20px); /* Adjusted width for four projects per row */
+    margin-bottom: 40px;
     text-align: center;
     text-decoration: none;
-    color: inherit;
-    border: 2px solid #ccc; /* Tilføjer grå streg omkring kasserne */
-    border-radius: 5px;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.project:nth-child(odd) {
-    margin-right: 20px; /* Tilføjer margin til højre for at adskille kasserne */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .description {
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    height: auto; /* Ændret til auto for at tilpasse højden til indholdet */
+    background-color: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
-
-
 
 .description h2 {
     margin-top: 0;
+    color: #333;
 }
 
 .description p {
     margin-bottom: 0;
-}
-
-.logogit {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px; 
-    height: auto; 
-    z-index: 1001; 
-    cursor: pointer; 
-    vertical-align: middle;
-    margin-right: 50px;
-}
-
-.logoweb {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px; 
-    height: auto; 
-    z-index: 1001; 
-    cursor: pointer; 
-    vertical-align: middle;
+    color: #666;
 }
