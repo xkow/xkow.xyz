@@ -30,7 +30,6 @@ body {
     transform: scale(1.1); /* Skaler knappen en smule ved hover */
 }
 
-
 .github-btn {
     right: 50px; /* Juster efter behov */
 }
@@ -38,11 +37,6 @@ body {
 .web-btn {
     right: 0px;
 }
-
-
-
-
-
 
 .projects {
     display: flex;
