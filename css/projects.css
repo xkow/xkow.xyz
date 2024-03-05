@@ -10,39 +10,39 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-.top-bar,
-.bottom-bar {
-    background-color: #333; /* Dark color for top and bottom bars */
-    color: #fff;
-    text-align: center;
-    padding: 5px 0; /* Adjusted padding for thinner bars */
+
+
+.top-bar {
+    padding: 10px 0; /* Gør top-baren lidt tyndere */
 }
 
-.bottom-bar {
+.github-btn, .web-btn {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease; /* Justeret timing-funktion */
+}
+.github-btn:hover, .web-btn:hover {
+    transform: scale(1.1); /* Skaler knappen en smule ved hover */
 }
 
-.bottom-bar nav ul {
-    list-style-type: none;
-    padding: 0;
+
+.github-btn {
+    right: 50px; /* Juster efter behov */
 }
 
-.bottom-bar nav ul li {
-    display: inline;
-    margin-right: 20px;
+.web-btn {
+    right: 0px;
 }
 
-.bottom-bar nav ul li:last-child {
-    margin-right: 0;
-}
 
-.bottom-bar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+
+
+
 
 .projects {
     display: flex;
