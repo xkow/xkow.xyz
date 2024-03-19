@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
              firstMessageAdded = false; // Nulstil flagget for den første besked
              return ""; // Returner tom streng, da der ikke skal tilføjes tekst til terminalen
          } else if (inputText.toLowerCase() === "whyamihere") {
-             return "whyamihere\n\nyou're on this page be  cause you tried to access something that you didn't have the right permission to";
+             return "whyamihere\n\nyou're on this page because you tried to access something that you didn't have the right permission to";
          } else if (inputText.toLowerCase() === "github") {
              window.open("https://github.com/xkow", "_blank");
              return "github\n\ngithub/xkow";        
