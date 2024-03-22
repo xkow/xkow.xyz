@@ -44,9 +44,6 @@ h1 {
 .download-btn:hover, .github-btn:hover {
     background-color: #0056b3;
 }
-
-
-
 .github-btn2, .web-btn {
     position: fixed;
     bottom: 0px;
