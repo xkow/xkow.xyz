@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn, .github-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover, .github-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.github-btn2, .web-btn {
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease; /* Justeret timing-funktion */
+}
+.github-btn2:hover, .web-btn:hover {
+    transform: scale(1.1); /* Skaler knappen en smule ved hover */
+}
+
+.github-btn2 {
+    right: 50px; /* Juster efter behov */
+}
+
+.web-btn {
+    right: 0px;
+}
