@@ -68,3 +68,13 @@ h1 {
 .web-btn {
     right: 0px;
 }
+
+.video-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
